@@ -10,6 +10,10 @@
 @import './sidebar-search.css';
 @import './sidebar-task.css';
 @import './sidebar.css';
+@import './scrollbar.css';
+@import './modal.css';
+@import './input.css';
+@import './create-task.css';
 
 
 
