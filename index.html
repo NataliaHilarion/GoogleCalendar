@@ -15,44 +15,44 @@
 
 <body>
   <div class="page">
+
     <header class="header">
 
-        <div class="header-primary">
-          <div class="header-logo">
-            <button class="button is-compact">
-              <i class="icon-hamburguer"></i>
-            </button>
-            <a href="./">
-              <img src="./images/logo.png" width="163" height="48" alt="logo" aria-current="page" aria-label="calendar"
-                tabindex="-1">
-            </a>
-          </div>
-
-          <div class="calendarStatus">
-            <button class="button is-secondary">Hoy</button>
-            <span class="calendarStatus-navigation ">
-              <a class="button is-compact" href="#" aria-label="anterior">
-                <i class="icon-left" aria-hidden="true"></i>
-              </a>
-              <a class="button is-compact" href="#" aria-label="siguiente">
-                <i class="icon-right" aria-hidden="true"></i>
-              </a>
-            </span>
-            <time class="calendarStatus-date " datetime="2022-02-17">17 febrero 2022</time>
-          </div>
-        </div>
-        <div class="header-secondary">
-          <select class="select" name="" id="">
-            <option value="" selected>Semana</option>
-            <option value="">Día</option>
-          </select>
-          <a href="#user">
-            <img class="header-avatar" src="./images/avatar.png" alt="avartar">
+      <div class="header-primary">
+        <div class="header-logo">
+          <button class="button is-compact">
+            <i class="icon-hamburguer"></i>
+          </button>
+          <a href="./">
+            <img src="./images/logo.png" width="163" height="48" alt="logo" aria-current="page" aria-label="calendar"
+              tabindex="-1">
           </a>
+        </div>
+
+        <div class="calendarStatus">
+          <button class="button is-secondary">Hoy</button>
+          <span class="calendarStatus-navigation ">
+            <a class="button is-compact" href="#" aria-label="anterior">
+              <i class="icon-left" aria-hidden="true"></i>
+            </a>
+            <a class="button is-compact" href="#" aria-label="siguiente">
+              <i class="icon-right" aria-hidden="true"></i>
+            </a>
+          </span>
+          <time class="calendarStatus-date " datetime="2022-02-17">17 febrero 2022</time>
+        </div>
+      </div>
+      <div class="header-secondary">
+        <select class="select" name="" id="">
+          <option value="" selected>Semana</option>
+          <option value="">Día</option>
+        </select>
+        <a href="#user">
+          <img class="header-avatar" src="./images/avatar.png" alt="avartar">
+        </a>
 
       </div>
     </header>
-
 
     <div class="sidebar">
       <button class="button is-rounded is-shadowed" aria-label="crear">
@@ -148,29 +148,30 @@
                 <i class="icon-checkSquare "></i>
               </button>
               <span>Natalia Hilarion</span>
-              </li>
+            </li>
             <li>
               <button class="button is-check">
                 <i class="icon-checkSquare "></i>
               </button>
               <span>Contactos</span>
-              </li>
+            </li>
             <li>
               <button class="button is-check">
                 <i class="icon-checkSquare "></i>
               </button>
               <span>Recordatorios</span>
-              </li>
+            </li>
             <li>
               <button class="button is-check">
                 <i class="icon-checkSquare "></i>
               </button>
               <span>Tareas</span>
-              </li>
+            </li>
 
           </ul>
         </details>
       </div>
+
     </div>
 
     <main class="calendar">
@@ -457,6 +458,62 @@
     </main>
   </div>
 
+  <dialog class="modal">
+    <form class="create-task">
+      <div class="input is-outstanding">
+        <input type="text" placeholder="Añade un título" name="title" required>
+      </div>
+      <div class="input">
+        <i class="icon-clock"></i>
+        <div class="input-body">
+          <input type="date" name="date" required>
+          <input type="time" name="time" required>
+          <input type="time" name="time" required>
+        </div>
+      </div>
+
+      <div class="input">
+        <i class="icon-users"></i>
+        <div class="input-body">
+          <input type="text" list="guests" placeholder="Asignar invitados" name="guests" required>
+          <datalist id="guests">
+            <option value="Leonidas"></option>
+            <option value="Sandra"></option>
+            <option value="Cristopher"></option>
+            <option value="Carlos"></option>
+            <option value="Miguel"></option>
+          </datalist>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-gps"></i>
+        <div class="input-body">
+          <input type="text" placeholder="Agregar lugar" name="location" required>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <input type="file" multiple name="attached" required>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <textarea name="description" placeholder="Agrega una descripcion" cols="30" rows="2"></textarea>
+        </div>
+      </div>
+    </form>
+    <div class="modal-actions">
+      <button class="button">Cancelar</button>
+      <button class="button is-primary">Aceptar</button>
+    </div>
+  </dialog> -->
+
+
+  <script>
+    document.querySelector('.modal').showModal();
+  </script>
 
 
 
