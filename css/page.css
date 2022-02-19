@@ -4,22 +4,24 @@
   grid-template-rows: 6rem 1fr ;
   block-size: 100vh;
   grid-template-areas: "header header" "sidebar calendar";
+  position: relative;
 }
 
 .page .header{
-  border: 5px solid red;
+  /* border: 5px solid red; */
   grid-area: header;
+
 }
 
 .page .sidebar{
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   grid-area: sidebar;
 
 
 }
 
 .page .calendar{
-  border: 5px solid green;
+  /* border: 5px solid green; */
   grid-area: calendar;
 
 

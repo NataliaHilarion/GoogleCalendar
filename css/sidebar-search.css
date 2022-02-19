@@ -1,0 +1,33 @@
+.sidebar-search{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--gray10);
+  max-inline-size: var(--maxInlineSidebar);
+
+}
+
+.search-icon i{
+   padding-inline-start: 1rem ;
+   padding-block: .75rem ;
+
+}
+
+.search-input{
+  display: flex;
+  flex: 1;
+  padding-inline-start: .5rem ;
+  padding-inline-end: 3.125rem;
+  padding-block: .625rem ;
+  overflow: hidden;
+
+}
+
+.search-input input{
+  border: 0;
+  padding: 0;
+  background-color: var(--gray10);
+  outline: none;
+  font: var(--body1-regular);
+}
