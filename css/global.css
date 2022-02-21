@@ -23,5 +23,53 @@
 body{
   font: var(--body1-regular);
   margin: 0;
+  background: var(--white);
+  color: var(--gray50);
 }
 
+
+@media screen and (prefers-color-scheme: dark){
+  :root{
+     --white: #222222;
+     --gray50: #fffffe;
+     --gray10: #70757a;
+     --gray30: #f1f3f4;
+  }
+
+.calendarDay a:hover span:nth-of-type(2),
+.calendarDay a:focus span:nth-of-type(2){
+  color: var(--gray50);
+}
+
+.calendarStatus .calendarStatus-date{
+  font: var(--subtitle-subtitle1);
+  color: var(--gray50);
+}
+
+.minicalendar .minicalendar-date{
+  font: var(--body1-medium);
+  color: var(--gray50);
+}
+
+
+.sidebar-search .search-input input{
+  background-color: var(--gray10);
+  color: var(--gray50);
+}
+
+.sidebar-search .search-input input::placeholder{
+  background-color: var(--gray10);
+  color: var(--gray50);
+}
+
+.header-secondary select{
+  color: var(--white);
+}
+
+.calendar .taskCell p{
+  color: var(--gray50);
+  /* border: 1px solid red; */
+
+}
+
+}
