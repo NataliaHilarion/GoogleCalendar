@@ -1,0 +1,45 @@
+.calendarTitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  margin: 0;
+  position: sticky;
+  inset-block-start: 0;
+  background: var(--white);
+  z-index: 2;
+  padding-inline-start: 2.5rem;
+}
+
+.calendarTitle span.day{
+  font: var(--body1-medium);
+  color: var(--blue10);
+
+}
+
+.calendarTitle span.number{
+    font: var(--subtitle-subtitle1);
+    inline-size: 2.75rem;
+    line-height: 2.75rem;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--blue10);
+    color: var(--white);
+
+}
+
+.calendarTitle time{
+  text-align: center;
+  inline-size: 55px;
+
+}
+
+.calendarTitle::before{
+  content: '';
+  inline-size: .1px;
+  block-size: 25px;
+  background: currentColor;
+  position: absolute;
+  inset-inline-start: 45px;
+  inset-block-end: 0;
+}

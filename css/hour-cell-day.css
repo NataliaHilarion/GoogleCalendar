@@ -1,0 +1,32 @@
+.hourCellDay{
+  place-self: start end;
+  font: var(--body3-regular);
+  transform: translateY(-50%);
+  padding-inline-end: 1rem;
+  position: relative;
+}
+
+.hourCellDay:nth-of-type(1){
+  transform: translatey(1px);
+}
+
+.hourCellDay::before{
+  content: '';
+  inline-size: .2rem;
+  block-size: 1px;
+  background: currentColor;
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block-end: 50%;
+
+}
+
+.hourCellDay:nth-of-type(1)::before{
+   content: '';
+  inline-size: .2rem;
+  block-size: 1px;
+  background: currentColor;
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block-end: 100%;
+}

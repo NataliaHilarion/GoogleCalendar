@@ -1,0 +1,13 @@
+.taskDay{
+  /* border: 1px solid red; */
+  background: var(--blue20);
+  border-radius: .25rem;
+  padding-block: .625rem;
+}
+
+.taskDay p{
+  color: var(--white);
+  padding-inline-start: 1rem;
+
+    margin: 0;
+}

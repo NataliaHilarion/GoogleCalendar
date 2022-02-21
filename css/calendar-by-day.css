@@ -1,0 +1,31 @@
+@import './calendar-title.css';
+@import './hour-cell-day.css';
+@import './task-cell-day.css';
+@import './current-time-day.css';
+@import './task-day.css';
+
+
+
+.calendar-by-day{
+  color: var(--gray20);
+  padding-inline: 1.5rem;
+  --minBlockSize: 4rem;
+  --maxBlockSize: auto;
+  --minInlineSize: 5rem ;
+  --maxInlineSize: 1fr;
+  position: relative;
+
+  overflow: scroll;
+
+}
+
+.calendarAllDay{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 7rem repeat(23, minmax(var(--minBlockSize), var(--maxBlockSize) ));
+  grid-template-areas: " header header" " body body2 ";
+}
+
+.calendarAllDay .calendarTitle{
+  grid-area: header ;
+}

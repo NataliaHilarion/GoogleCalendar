@@ -1,16 +1,16 @@
-.taskCell{
+.taskCellDay{
   border-inline-start: 1px solid currentColor;
   border-block-end: 1px solid currentColor;
-  padding: .25rem;
+  padding-block: .25rem;
 
 
 }
 
-/* .taskCell:nth-child(8n){
-   border-inline-end: 1px solid currentColor;
-} */
+.taskCellDay:nth-of-type(1){
+  border-block-start: 1px solid currentColor;
+}
 
-.taskCell.is-active::before{
+.taskCellDay.is-active::before{
   content: '(Sin Titulo)';
   font-size: small;
   background: #C6DAFC;
@@ -19,4 +19,3 @@
   border-radius: .25rem;
   box-shadow: 0 0 10px rgb(0,0,0,.3);
 }
-

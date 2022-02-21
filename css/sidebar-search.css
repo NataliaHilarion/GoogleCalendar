@@ -1,5 +1,6 @@
 .sidebar-search{
   /* border: 1px solid red; */
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +21,10 @@
   padding-inline-start: .5rem ;
   padding-inline-end: 3.125rem;
   padding-block: .625rem ;
+  /* border: 1px solid green; */
+
+  max-inline-size: 100px;
+
   overflow: hidden;
 
 }
@@ -30,4 +35,8 @@
   background-color: var(--gray10);
   outline: none;
   font: var(--body1-regular);
+  /* border: 1px solid blue; */
+  max-inline-size: 7.625rem;
+
+
 }
